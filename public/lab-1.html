@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Huỳnh Văn Hữu Ân - HCI NLU</title>
+		<link rel="shortcut icon" href="assets/images/nlu.png" type="fav">
+		<!-- Bootstrap core CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Additional CSS Files -->
+		<link rel="stylesheet" href="assets/css/fontawesome.css" />
+		<link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
+		<link rel="stylesheet" href="assets/css/animated.css" />
+		<link rel="stylesheet" href="assets/css/owl.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<!-- ***** Preloader Start ***** -->
+		<div id="js-preloader" class="js-preloader">
+			<div class="preloader-inner">
+				<span class="dot"></span>
+				<div class="dots">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Preloader End ***** -->
+
+		<!-- ***** Header Area Start ***** -->
+		<header
+			class="header-area header-sticky wow slideInDown"
+			data-wow-duration="0.75s"
+			data-wow-delay="0s"
+		>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<nav class="main-nav">
+							<!-- ***** Logo Start ***** -->
+							<a href="index.html" class="logo">
+								<h4>HCI<span>NLU</span></h4>
+							</a>
+							<!-- ***** Logo End ***** -->
+							<!-- ***** Menu Start ***** -->
+							<ul class="nav">
+								<li class="scroll-to-section">
+									<a href="./index.html">Home</a>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./about.html">About Me</a>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./lab-1.html" class="active"
+										>Lab 1</a
+									>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./lab-2.html">Lab 2</a>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./lab-3.html">Lab 3</a>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./lab-4.html">Lab 4</a>
+								</li>
+								<li class="scroll-to-section">
+									<a href="./result.html">Result</a>
+								</li>
+								<li class="scroll-to-section">
+									<div class="main-red-button">
+										<a href="https://quanlyanimehci21g2.tk"
+											>My Project</a
+										>
+									</div>
+								</li>
+							</ul>
+							<a class="menu-trigger">
+								<span>Menu</span>
+							</a>
+							<!-- ***** Menu End ***** -->
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- ***** Header Area End ***** -->
+
+		<div class="about-us section">
+			<div class="container">
+				<ul class="nav nav-tabs card-header-tabs text-center">
+					<li class="nav-item">
+						<a
+							class="nav-link active"
+							onclick="openTab(event, 'requirement')"
+							href="#"
+							>Requirement</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							onclick="openTab(event, 'design')"
+							href="#"
+							>Design</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							onclick="openTab(event, 'implement')"
+							href="#"
+							>Implement</a
+						>
+					</li>
+				</ul>
+				<div id="requirement" style="display: block" class="tabcontent">
+					<p>
+						Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ như
+						<strong>lớp</strong>, <strong>môn học</strong>,
+						<strong>giảng viên</strong>,… Sau đó thiết kế chức năng
+						Quản lý đối tượng đó trên html bao gồm các tính năng
+						thêm, sửa, xóa, tìm kiếm cho đối tượng đó.
+					</p>
+					<p>
+						<span class="text-success"><strong>Ví dụ</strong></span
+						>: làm chức năng Quản lý Sinh viên, bao gôm tính năng
+						thêm, sửa, xóa, tìm kiếm.
+					</p>
+					<p>
+						<span class="text-danger"><strong>Chú ý</strong></span
+						>: Các thành viên trong nhóm không được chọn các đối
+						tượng giống nhau
+					</p>
+				</div>
+				<div id="design" class="tabcontent">
+					<div class="row">
+						<div class="col-lg-6">
+							<h2 class="text-center">Design</h2>
+							<img
+								src="assets/images/Lab-1-Design.png"
+								alt=""
+							/>
+						</div>
+						<div class="col-lg-6">
+							<h2 class="text-center">Template</h2>
+							<img
+								src="assets/images/Lab-1-Template.png"
+								alt=""
+							/>
+						</div>
+					</div>
+				</div>
+				<div id="implement" class="tabcontent">
+					<form
+						role="form"
+						action="javascript:void(0)"
+						method="POST"
+						onsubmit="app.Add()"
+						enctype="multipart/form-data"
+					>
+						<div class="row">
+							<div class="col-md-5">
+								<input type="hidden" id="id" value="" />
+								<div class="form-group">
+									<label>Name</label>
+									<input
+										type="text"
+										class="form-control"
+										id="name"
+										placeholder="Enter movie name"
+										required
+									/>
+								</div>
+								<br />
+								<div class="form-group">
+									<label>Director</label>
+									<input
+										type="text"
+										class="form-control"
+										id="director"
+										placeholder="Enter director"
+										required
+									/>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label>Publish Date</label>
+									<input
+										type="date"
+										class="form-control"
+										id="publishDate"
+										required
+									/>
+								</div>
+								<br />
+								<div class="form-group">
+									<label>Category</label>
+									<select
+										class="custom-select form-control"
+										id="category"
+									>
+										<option
+											class="option"
+											value=""
+											selected
+										>
+											Choose category
+										</option>
+										<option class="option" value="Romantic">
+											Romantic
+										</option>
+										<option class="option" value="Fiction">
+											Fiction
+										</option>
+										<option class="option" value="Horror">
+											Horror
+										</option>
+										<option class="option" value="Fantasy">
+											Fantasy
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Duration(min)</label>
+									<input
+										type="text"
+										class="form-control"
+										id="duration"
+										placeholder="Enter duration"
+										required
+									/>
+								</div>
+							</div>
+						</div>
+						<br />
+						<div class="form-group">
+							<input
+								class="btn btn-primary"
+								type="submit"
+								value="Save"
+							/>
+						</div>
+					</form>
+					<hr />
+					<p style="padding-left: 20px">
+						You have: <span id="counter"></span>
+					</p>
+					<table class="table table-bordered table-striped">
+						<thead style="text-align: center">
+							<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Director</th>
+								<th>Publish Date</th>
+								<th>Category</th>
+								<th>Duration(min)</th>
+								<th colspan="2">Tools</th>
+							</tr>
+						</thead>
+						<tbody id="task"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div
+						class="col-lg-12 wow fadeIn"
+						data-wow-duration="1s"
+						data-wow-delay="0.25s"
+					>
+						<p>
+							© Copyright 2021 Space Dynamic Co. All Rights
+							Reserved.
+
+							<br />Design:
+							<a rel="nofollow" href="https://templatemo.com"
+								>TemplateMo</a
+							>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/owl-carousel.js"></script>
+		<script src="assets/js/animation.js"></script>
+		<script src="assets/js/imagesloaded.js"></script>
+		<script src="assets/js/templatemo-custom.js"></script>
+		<script src="assets/js/script.js"></script>
+	</body>
+</html>
